@@ -1,57 +1,24 @@
 {
-  "name": "solid-start-monorepo",
-  "description": "Official starter for SolidJS",
-  "version": "0.1.0",
-  "author": "Ryan Carniato",
-  "type": "module",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ryansolid/solid-start"
-  },
-  "private": true,
+  "name": "example-bare",
   "scripts": {
-    "clean": "pnpm run clean:root",
-    "clean:root": "rimraf node_modules",
-    "publish:release": "lerna publish",
-    "docs:dev": "solid-start dev",
-    "docs:build": "solid-start build",
-    "docs:start": "solid-start start",
-    "clean:test": "rimraf .tmp",
-    "build:all": "pnpm run -r --if-present build",
-    "test:all": "pnpm run clean:test && cross-env START_ADAPTER=solid-start-node npm run test",
-    "test": "pnpm run clean:test && pnpm --filter solid-start-tests test --",
-    "bump": "node scripts/bump.cjs"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
   },
+  "type": "module",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.5.0",
-    "@tailwindcss/typography": "^0.5.7",
-    "@trpc/client": "^9.27.4",
-    "@trpc/server": "^9.27.4",
-    "coveralls": "^3.1.1",
-    "debug": "^4.3.4",
-    "fast-glob": "^3.2.12",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.79.1",
-    "solid-js": "^1.6.0",
-    "solid-mdx": "^0.0.6",
-    "solid-start": "workspace:0.2.0",
-    "solid-start-mdx": "workspace:0.2.0",
-    "solid-start-netlify": "workspace:0.2.0",
-    "solid-start-node": "workspace:0.2.0",
-    "tailwindcss": "^3.2.0",
-    "tippy.js": "^6.3.7",
-    "turbo": "^1.5.6",
-    "typescript": "4.7.4",
-    "undici": "^5.11.0",
-    "vite": "^3.1.8",
-    "zod": "^3.19.1"
+    "solid-start-node": "^0.2.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8"
   },
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "@solidjs/meta": "^0.28.0",
+    "@solidjs/router": "^0.5.0",
+    "solid-js": "^1.6.0",
+    "solid-start": "^0.2.0",
+    "undici": "^5.11.0"
+  },
+  "engines": {
+    "node": ">=16"
   }
 }
