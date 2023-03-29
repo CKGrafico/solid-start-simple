@@ -10,7 +10,7 @@ import {
   Meta,
   Routes,
   Scripts,
-  Title
+  Title,
 } from "solid-start";
 import "./root.css";
 
@@ -25,8 +25,6 @@ export default function Root() {
       <Body>
         <Suspense>
           <ErrorBoundary>
-            <A href="/">Index</A>
-            <A href="/about">About</A>
             <Routes>
               <FileRoutes />
             </Routes>

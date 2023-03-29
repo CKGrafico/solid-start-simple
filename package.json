@@ -9,13 +9,19 @@
   "devDependencies": {
     "solid-start-node": "^0.2.0",
     "typescript": "^4.8.4",
-    "vite": "^3.1.8"
+    "vite": "^3.1.8",
+    "vite-plugin-solid": "^2.3.10"
   },
   "dependencies": {
+    "@papanasi/solid": "^1.1.0-alpha.13",
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.5.0",
-    "solid-js": "^1.6.0",
+    "color-hash": "^2.0.1",
+    "copy-to-clipboard": "^3.3.2",
+    "highlight.js": "^11.6.0",
+    "solid-js": "^1.6.15",
     "solid-start": "^0.2.0",
+    "ssr-window": "^4.0.2",
     "undici": "^5.11.0"
   },
   "engines": {
